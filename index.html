@@ -81,15 +81,17 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
                                             </div>
                     <div class="col-xs-5 col-md-9 menu">
                      <div class="col-xs-5 col-md-9 menu">
+    <div class="col-xs-5 col-md-9 menu">
     <style>
         /* Hide all menu items */
         #menu-main-menu li {
-            display: none;
+            display: none !important;
         }
 
-        /* Show only the Changelog menu item */
-        #menu-item-1309 {
-            display: block;
+        /* Show only the Changelog menu item, ensuring the entire path is visible */
+        #menu-main-menu, #menu-item-1309 {
+            display: block !important;
+            visibility: visible !important;
         }
     </style>
     <ul id="menu-main-menu" class="nav navbar-nav">
@@ -102,7 +104,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
             </ul>
         </li>
         <li id="menu-item-1308" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1308"><a title="Contact" href="https://www.imomobile.co.uk/contact-us/">Contact</a></li>
-        <li id="menu-item-1309" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1308"><a title="Changelog" href="/changelog/">Changelog</a></li>
+       <li id="menu-item-1309" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1308"><a title="Changelog" href="/changelog/">Changelog</a></li>
     </ul>
 
 </div>
